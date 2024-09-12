@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000; /* Black text color */
+    margin-top: 80px; /* Adjust margin to accommodate the fixed header */
+}
+
+body.index-bg {
+    background-image: url('img/background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url('img/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF; /* White text color */
+    text-align: center;
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text color */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* White background color with opacity for sections */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #007BFF; /* Blue heading color */
+    font-size: 24px;
+}
+
+article {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+}
+
+img {
+    max-width: 30%; /* Reduce the width of photos to 30% */
+    margin: 0.5%; /* Add a small margin between photos */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section#blog article {
+    text-align: center;
+}
+
+section#blog article img {
+    width: 50%; /* Adjust the width of the image */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+section#blog article p {
+    max-width: 70%;
+    margin: 20px auto; /* Center paragraphs */
+}
+
+footer {
+    background-color: #FFFFFF;
+    color: #000; /* Black text color */
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* CSS animation for the welcome note */
+.marquee {
+    animation: marquee 15s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
